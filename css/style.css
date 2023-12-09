@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*,
+*::after,
+*::before
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  font-family: 'Bebas Neue', cursive;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* div
+{
+  scroll-snap-align: none none;
+} */
+::selection
+{
+  background: lightblue;
+}
+/* ::-webkit-scrollbar {
+  height: 4px;
+  width: 10px;
+  background: gray;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #000;
+  border-radius: 10px;
+} */
+.wrapper
+{
+  width: 400vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.logo
+{
+  font-size: 14rem;
+  line-height: 1.2;
+  position: fixed;
+  top: 20%;
+  left: 2%;
+  z-index: 1000;
+}
+.overview,.begin,.project
+{
+  width: 100vw;
+  height: 100vh;
+}
+section:nth-of-type(1)
+{
+  background: #ffffff;
+  position: relative;
+}
+section:nth-of-type(2)
+{
+  background: #ffffff98;
+  position: relative;
+}
+.line
+{
+  width: 100vw;
+  height: 2rem;
+  background: red;
+  margin: 20pc auto;
+}
+.block
+{
+  position: absolute;
+  width: 2rem;
+  height: 100vh;
+  background: #FFC700;
+  transform: translate(100%,0);
+}
+.big-block
+{
+  position: absolute;
+  width: 45rem;
+  height: 100vh;
+  background: #FFC700;
+  left: 40pc;
+  display: grid;
+}
+.big-block > .option > a
+{
+  text-decoration: none;
+  font-size: 3rem;
+  color: #000000;
+}
+.big-block > .option > a:hover {
+  color: #ffffff;
+}
+.one
+{
+  position: absolute;
+  place-content: center;
+  top: 55%;
+  left: 30%;
+  width:40vw;
+  transform: translate(-100%,-300%);
+  font-family: monospace;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+span
+{
+  background: lime;
+}
+.quote
+{
+  font-size: 3rem;
+  position: absolute;
+  top: 72%;
+  left: 52%;
+  transform: translate(100%,100%);
+  background: linear-gradient(to right, #000000 69%, #192705 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.group-img>img
+{
+  width: 50vw;
+  position: absolute;
+  top: 10%;
+  left: -25%;
+  transform: translate(100%,0%);
+}
+.glass
+{
+  position: absolute;
+  width: 40vw;
+  height: 50vh;
+  left: 3%;
+  top: -10%;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.57);
+  transform: translate(0,100%);
+}

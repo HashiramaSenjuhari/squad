@@ -1,0 +1,26 @@
+.vertical {
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -ms-transform-origin: right top 0;
+  -moz-transform-origin: right top 0;
+  -webkit-transform-origin: right top 0;
+  transform-origin: right top 0;
+  /* font-family: "Megrim", cursive; */
+  right: 0%;
+  top: 35%;
+  left: -0.5rem;
+  color: #000000;
+  padding-top: 2vw;
+  padding-right: 2vw;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+  cursor: vertical-text;
+  position: absolute;
+  display: block;
+  height: auto;
+  direction: rtl;
+  z-index: 11;
+}

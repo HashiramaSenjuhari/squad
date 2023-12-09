@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+.banner
+{
+  position: relative;
+  top: 4.5%;
+  left: 4.25%;
+}
+
+.banner {
+  position: absolute;
+  width: 600px;
+  height: 40px;
+  padding: 0px 5px;
+  background: #462da0;
+  overflow: hidden;
+  user-select: none;
+}
+
+.banner >p {
+  padding-top: 10px;
+  position: absolute;
+  font-family: "Geo-edit";
+  font-weight: 500;
+  text-wrap: nowrap;
+  top: 0;
+  color: white;
+  pointer-events: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.banner >p:first-of-type {
+  left: -100%;
+}
+
+
+@keyframes moveLeftText {
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes moveCenterText {
+  to {
+    left: 100%;
+  }
+}
