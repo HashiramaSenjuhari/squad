@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*,
+*::after,
+*::before
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  font-family: 'Bebas Neue', cursive;
+  scroll-behavior: smooth;
+  opacity: 0;
+  transition: 1s;
+}
+.wrapper
+{
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.block:nth-of-type(1)
+{
+  background: #000000d0;
+  height: 100vh;
+  width: 2vw;
+  position: absolute;
+  margin-right: 98vw;
+}
+.gallery-div
+{
+  width: 92vw;
+  background: #f7f7f7;
+  height: 95vh;
+  display: flex;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.153)
+}
+.hero
+{
+  width: 50vw;
+  height: 92vh;
+  background: #ffffff;
+  margin: 10px; 
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.144);
+}
+.hero img
+{
+  width: 48vw;
+  height: 72vh;
+  transform: translateY(70px);
+  margin: 10px; 
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.169);
+  z-index: 1900000;
+}
+.btns
+{
+  list-style-type: none;
+  width: 41vw;
+  height: 95vh;
+  background: rgba(0, 0, 0, 0)fff;
+  margin-left: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-shadow: inset 0px -20px 10px rgba(0, 0, 0, 0.242);
+}
+.btns video
+{
+  border-radius: 10px;
+}
+.btns img
+{
+  width: 9.8vw;
+  padding-top: 5px;
+  padding-left: 10px;
+  aspect-ratio: 1/0.9;
+  border-radius: 5px 5px 5px 5px;
+
+  & li {
+    cursor: pointer;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.fadeIn { animation: fadeIn 0.5s; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+.btns::-webkit-scrollbar-track
+{
+    background-color: #F5F5F5;
+}
+
+.btns::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.btns::-webkit-scrollbar-thumb
+{
+    background-color: #000000bb;
+    border-radius: 5px;
+}
+
+/* .gallery
+{
+
+  background: #fab22e;
+}
+
+.gallery {
+  position: relative;
+  width: min(85vmin,700px);
+
+  & .btns img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+} */
+
+/* .hero { aspect-ratio: 3/2; }
+.hero img
+{
+  height: 10pc;
+  width: 38.8pc;
+}
+
+.fadeIn { animation: fadeIn 0.5s; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 1;
+  }
+} */
+
+.btns {
+  list-style-type: none;
+  display: flex;
+  gap: -1rem;
+
+  & li {
+    cursor: pointer;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+} 
