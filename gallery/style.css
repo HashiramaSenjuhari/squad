@@ -22,10 +22,11 @@ body
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background: #f8f8f8;
 }
 .block:nth-of-type(1)
 {
-  background: #000000d0;
+  background: #ffffffd0;
   height: 100vh;
   width: 2vw;
   position: absolute;
@@ -37,13 +38,13 @@ body
   background: #f7f7f7;
   height: 95vh;
   display: flex;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.153)
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.153)
 }
 .hero
 {
   width: 50vw;
   height: 92vh;
-  background: #ffffff;
+  background: #f1f1f1;
   margin: 10px; 
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.144);
 }
@@ -61,7 +62,7 @@ body
   list-style-type: none;
   width: 41vw;
   height: 95vh;
-  background: rgba(0, 0, 0, 0)fff;
+  background: rgb(229, 229, 229)fff;
   margin-left: 6px;
   display: flex;
   flex-wrap: wrap;
@@ -72,10 +73,12 @@ body
 .btns video
 {
   border-radius: 10px;
+  width: 100%;
 }
 .btns img
 {
-  width: 9.8vw;
+  width: 19vw;
+  height: 14vw;
   padding-top: 5px;
   padding-left: 10px;
   aspect-ratio: 1/0.9;
@@ -112,7 +115,7 @@ body
 
 .btns::-webkit-scrollbar-thumb
 {
-    background-color: #000000bb;
+    background-color: #ffffffe8;
     border-radius: 5px;
 }
 
